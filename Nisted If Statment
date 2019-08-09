@@ -1,0 +1,64 @@
+          
+          
+          This my basics project on c# of nisted if statment.
+          
+          
+          Console.WriteLine("Enter digit one to range :"); // Number One
+            int a = int.Parse(Console.ReadLine()); // Input One
+            Console.WriteLine("Enter digit two to range :"); // Number Two
+            int b = Convert.ToInt32(Console.ReadLine()); // Input Two
+            Console.WriteLine("Enter digit one to range :"); // Number Three
+            int c = int.Parse(Console.ReadLine()); // Input Three
+
+
+            if ( a > 0 || b > 0 || c > 0 )
+            {
+                if ( a > b && a > c )
+                {
+                    Console.WriteLine(a + "A First");
+                    if (b > c)
+                    {
+
+                        Console.WriteLine(b + "B Second");
+                        Console.WriteLine(c + "C Third");
+                    }
+                    else
+                    {
+                        Console.WriteLine(c + "C Second");
+                        Console.WriteLine(b + "B Three");
+
+                    }
+                }else if( b > a && b > c)
+                {
+                    Console.WriteLine(b + "B First");
+                    if(a > c)
+                    {
+                        Console.WriteLine(a + "A Second");
+                        Console.WriteLine(c + "C Three");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine(c + "C Second");
+                        Console.WriteLine(a + "A Three");
+                    }
+                }else if(c > a && c > b)
+                {
+                    Console.WriteLine(c + "C First");
+                    if(a > c)
+                    {
+                        Console.WriteLine(a + "A Second");
+                        Console.WriteLine(b + "B Three");
+                    }
+                    else
+                    {
+                        Console.WriteLine(b + "B Second");
+                        Console.WriteLine(a + "A Three");
+                    }
+                }
+               
+            }
+
+           
+
+            Console.ReadKey();

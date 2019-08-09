@@ -1,0 +1,23 @@
+
+This my small project converts Celsius To Fahrenheit 
+
+
+          Console.Title = "Celuis To Fahrenheit";
+            Console.WriteLine("Chose C/F : ");
+            string c = Console.ReadLine();
+
+            if (c == "c" || c == "C")
+            {
+                Console.WriteLine("Enter Value :");
+                double degreeC = double.Parse(Console.ReadLine());
+                double degreeF = 5 * (degreeC - 32) / 9;
+                Console.WriteLine("The Value In Fahrenheit : " + degreeF);
+            }
+            else if(c == "f" || c == "F")
+            {
+                Console.WriteLine("Enter Value :");
+                double degreeF = double.Parse(Console.ReadLine());
+                double degreeC = 9 * (degreeF / 5) + 32;
+                Console.WriteLine("The Value In Celuis : " + degreeC);
+            }
+            else { Console.WriteLine("There is no value : "); }
